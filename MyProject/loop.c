@@ -39,13 +39,21 @@ int main(void)
 	//printf("Hello World %d\n", i++);
 	//printf("Hello World %d\n", i++);
 
-	// 반복문
-	// for, while, do while
+	//// 반복문
+	//// for, while, do while
 
-	// for (선언; 조건; 증감)
-	for (int i = 1; i <= 10; i++)
+	//// for (선언; 조건; 증감)
+	//for (int i = 1; i <= 10; i++)
+	//{
+	//	printf("Hello World %d\n", i);
+	//}
+
+	// while (조건) { }
+	int i = 1;
+	while (i <= 10)
 	{
-		printf("Hello World %d\n", i);
+		printf("Hello World %d\n", i++);
+		// i++;
 	}
 	
 	return 0;
