@@ -1,6 +1,7 @@
 #include <stdio.h>
+#include <time.h>
 
-int main_condition(void)
+int main(void)
 {
 	//// 버스를 탄다고 가정, 학생 / 일반인으로 구분 (일반인 : 20세)
 	//int age = 25;
@@ -75,32 +76,54 @@ int main_condition(void)
 	//	printf("값이 서로 다르네요.\n");
 	//}
 
+	// 가위 0 바위 1 보 2
+	//srand(time(NULL));
+	//int i = rand() % 3; // 0 ~ 2 반환
+	//if (i == 0)
+	//{
+	//	printf("가위\n");
+	//}
+	//else if (i == 1)
+	//{
+	//	printf("바위\n");
+	//}
+	//else if (i == 2)
+	//{
+	//	printf("보\n");
+	//}
+	//else
+	//{
+	//	printf("몰라요\n");
+	//}
 
+	//srand(time(NULL));
+	//int i = rand() % 3; // 0 - 2 반환
+	//int i = 1;
+	//switch (i)
+	//{
+	//case 0: printf("가위\n"); break;
+	//case 1: printf("바\n"); break;
+	//case 2: printf("가위\n"); break;
+	//default:printf("몰라요\n"); break;
+	//}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	int age = 13;
+	switch (age)
+	{
+	case 8:
+	case 9:
+	case 10:
+	case 11:
+	case 12:
+	case 13:printf("초등학생입니다.\n"); break;
+	case 14:
+	case 15:
+	case 16:printf("중학생입니다.\n"); break;
+	case 17:
+	case 18:
+	case 19:printf("고등학생입니다.\n"); break;
+	default:printf("학생이 아닙니다.\n"); break;
+	}
 
 	return 0;
 }
